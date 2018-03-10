@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/nice_image"
+    tools:context="ro.ase.pdm.incercare4.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="294dp"
+        android:layout_height="474dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.324"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.181">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/id_welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:text="Fixing Bucharest"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/btn_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/id_see_database"
+            android:layout_marginTop="23dp"
+            android:clickable="false"
+            android:text="Device location" />
+
+        <Button
+            android:id="@+id/id_add_report"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_above="@+id/id_recent_reports"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="36dp"
+            android:layout_toStartOf="@+id/btn_map"
+            android:onClick="AddReport"
+            android:text="ADD REPORT" />
+
+        <Button
+            android:id="@+id/id_see_database"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:onClick="SeeDatabaseData"
+            android:layout_alignLeft="@+id/imageView"
+            android:layout_alignStart="@+id/imageView"
+            android:layout_below="@+id/id_add_report"
+            android:layout_toEndOf="@+id/imageView"
+            android:text="See Database Data" />
+
+        <Button
+            android:id="@+id/id_recent_reports"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/btn_map"
+            android:layout_toStartOf="@+id/btn_map"
+            android:onClick="GoToRecentReports"
+            android:text="View Recent Reports" />
+
+        <Button
+            android:id="@+id/id_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/id_add_report"
+            android:layout_alignLeft="@+id/btn_map"
+            android:layout_alignParentEnd="true"
+            android:layout_alignStart="@+id/btn_map"
+            android:layout_toEndOf="@+id/imageView"
+            android:autoLink="phone"
+            android:linksClickable="true"
+            android:onClick="CallAuthorities"
+            android:text="contact us" />
+
+        <Button
+            android:id="@+id/id_information"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/btn_map"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toEndOf="@+id/id_add_report"
+            android:layout_toLeftOf="@+id/id_contact"
+            android:layout_toStartOf="@+id/id_contact"
+            android:onClick="ShowContactList"
+            android:text="Useful Information" />
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

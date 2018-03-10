@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<contacts>
+    <contact>
+        <name>Police</name>
+        <phone>0757 8888000</phone>
+        <address>Strada Neputintei</address>
+    </contact>
+    <contact>
+        <name>Child Care Service</name>
+        <phone>0757 8888000</phone>
+        <address>Strada Dezamagirii</address>
+    </contact>
+    <contact>
+        <name>Finance</name>
+        <phone>0757 8888000</phone>
+        <address>Strada NuConteaza</address>
+    </contact>
+</contacts>

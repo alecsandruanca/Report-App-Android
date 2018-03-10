@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">incercare4</string>
+    <string name="spinner_selectOne">Select One</string>
+    <string name="dialog_message">The Last Name cannot be left empty. Please fill it in!</string>
+    <string name="title_message">The title field cannot be empty.Please fill it in</string>
+    <string name="id_addReport_textview">ADD REPORT</string>
+    <string name="DescriptionTV">Description</string>
+    <string name="TitleTV">Title</string>
+    <string name="spinner_title">Choose one</string>
+    <string name="desc">Content Description</string>
+</resources>
